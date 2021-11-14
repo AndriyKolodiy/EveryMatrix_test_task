@@ -35,7 +35,7 @@ public class ShipsCounter {
         if (row >= array.length || col >= array[0].length || array[row][col] != 1)
             return;
 
-        array[row][col] = 0;
+        array[row][col] = 0; //set visited
 
         DepthSearch(array, row+ 1, col); //checking right neighbor
         DepthSearch(array, row, col + 1); //check the neighbor below
